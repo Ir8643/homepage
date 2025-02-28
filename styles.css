@@ -1,0 +1,92 @@
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-color: #1e1e1e; /* Dark background */
+    color: #d4d4d4; /* Light text color */
+}
+
+body {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+}
+
+header {
+    background: #252526; /* Darker header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #444; /* Subtle border */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+ul li a {
+    color: #569cd6; /* Link color */
+    text-decoration: none;
+    padding: 5px 10px; /* Add padding for a button-like appearance */
+    border-radius: 4px; /* Rounded corners */
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
+}
+
+ul li a:hover {
+    background: rgba(86, 157, 214, 0.2); /* Light background on hover */
+    color: #ffffff; /* Change text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+main {
+    flex: 1; /* Allow main to grow and fill available space */
+    padding: 20px; /* Add padding to main content */
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(38, 38, 38, 0.8); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    color: #ffffff; /* White text for hero */
+}
+
+button {
+    padding: 10px 20px;
+    background: #007acc; /* Button color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px; /* Rounded button */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background: #005a9e; /* Darker button on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #252526; /* Dark footer */
+    border-top: 1px solid #444; /* Subtle border */
+}
+
+.cropped-image {
+    width: 40%; /* Adjust width as needed */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Crop the image to fit */
+    border-radius: 8px; /* Rounded corners */
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add some space between the image and text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
